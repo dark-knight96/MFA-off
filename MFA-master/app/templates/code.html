@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/materialize/css/materialize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='my_styles.css')}}">
+    <script src="{{url_for('static',filename='styles/materialize/js/materialize.js')}}"></script>
+    <meta charset="UTF-8">
+    <title>Success</title>
+</head>
+<body>
+<script>alert("Login successful");</script>
+<div class="valign-wrapper" style="width:100%;height:100%;position:absolute;">
+    <div class="valign" style="width:100%;">
+        <div class="container">
+            <div class="row">
+                <div classs="col s4 offset-s4">
+                    <a href="{{url_for('out',user=username)}}" class="btn waves-effect grey white-text">Logout</a>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</body>
+</html>
